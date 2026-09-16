@@ -1,0 +1,7 @@
+streamlit>=1.30
+docplex>=2.25
+cplex>=22.1          # CPLEX Community Edition (giới hạn 1000 biến/ràng buộc) — dùng cho host miễn phí
+pandas>=2.0
+openpyxl>=3.1
+matplotlib>=3.7
+numpy>=1.24
