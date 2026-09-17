@@ -24,7 +24,10 @@ spa_webapp/
 │   ├── solver.py         # dựng & giải 4 MILP bằng CPLEX + trích lời giải + đo thời gian
 │   └── visualizer.py     # vẽ đồ thị hai phía (input / lời giải)
 ├── app.py                # giao diện Streamlit (lớp vỏ mỏng, gọi core)
-├── template_spa.xlsx     # file dữ liệu mẫu (ví dụ 5 SV / 4 đề tài trong bài)
+├── data/                 # dữ liệu Excel
+│   ├── template_spa.xlsx        # file mẫu (ví dụ 5 SV / 4 đề tài trong bài)
+│   ├── C06MG01_10_7_1.xlsx      # dữ liệu thật lớp C06MG01 (10 SV / 7 ĐT)
+│   └── T14MG01_35_22_5.xlsx     # dữ liệu thật lớp T14MG01 (35 SV / 22 ĐT)
 └── requirements.txt
 ```
 
@@ -53,7 +56,7 @@ bên trái để chạy thử ngay với ví dụ trong bài.
 
 ## Định dạng file Excel
 
-Xem sheet **"Hướng dẫn"** trong `template_spa.xlsx`. Tóm tắt:
+Xem sheet **"Hướng dẫn"** trong `data/template_spa.xlsx`. Tóm tắt:
 
 | Sheet | Cột |
 |---|---|

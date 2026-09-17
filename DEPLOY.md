@@ -12,7 +12,7 @@ chạy Streamlit (lo luôn WebSocket), deploy thẳng từ GitHub.
 ## Bước 1 — Đưa code lên GitHub
 
 Đẩy **nội dung bên trong thư mục `spa_webapp/`** lên **thư mục gốc** của một repo GitHub
-(để `app.py`, `core/`, `requirements.txt`, `.streamlit/`, `template_spa.xlsx` nằm ngay gốc repo).
+(để `app.py`, `core/`, `data/`, `requirements.txt`, `.streamlit/` nằm ngay gốc repo).
 
 ```bash
 cd spa_webapp

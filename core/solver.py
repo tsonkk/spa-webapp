@@ -28,16 +28,10 @@ MODEL_NAMES = {
 
 
 def format_duration(seconds):
-    """Auto-scale: < 1 ms hiện µs, < 1 s hiện ms, còn lại hiện s."""
+    """Đơn vị thời gian đồng nhất với luận văn."""
     if seconds is None:
         return "—"
-    ms = seconds * 1000.0
-    if ms < 1.0:
-        us = seconds * 1_000_000.0
-        return f"{us:.0f} µs" if us >= 10 else f"{us:.1f} µs"
-    if ms < 1000.0:
-        return f"{ms:.2f} ms"
-    return f"{seconds:.2f} s"
+    return f"{round(seconds * 1_000_000)} ms"
 
 
 def _add_common_constraints(model, x, S, P, E, c):

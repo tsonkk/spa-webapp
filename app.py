@@ -25,7 +25,7 @@ from core import (
     visualize_spa_instance,
 )
 
-TEMPLATE_PATH = Path(__file__).parent / "template_spa.xlsx"
+TEMPLATE_PATH = Path(__file__).parent / "data" / "template_spa.xlsx"
 
 st.set_page_config(page_title="SPA — Phân công SV & Đề tài", page_icon="🎓", layout="wide")
 
