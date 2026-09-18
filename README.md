@@ -25,9 +25,8 @@ spa_webapp/
 │   └── visualizer.py     # vẽ đồ thị hai phía (input / lời giải)
 ├── app.py                # giao diện Streamlit (lớp vỏ mỏng, gọi core)
 ├── data/                 # dữ liệu Excel
-│   ├── template_spa.xlsx        # file mẫu (ví dụ 5 SV / 4 đề tài trong bài)
-│   ├── C06MG01_10_7_1.xlsx      # dữ liệu thật lớp C06MG01 (10 SV / 7 ĐT)
-│   └── T14MG01_35_22_5.xlsx     # dữ liệu thật lớp T14MG01 (35 SV / 22 ĐT)
+│   ├── template_spa.xlsx                 # file mẫu (ví dụ 5 SV / 4 đề tài trong bài)
+│   └── <MÃLỚP>_<SV>_<ĐT>_<cặp>.xlsx      # 20 lớp thật (Bảng 3.3), vd C06MG01_10_7_1.xlsx
 └── requirements.txt
 ```
 

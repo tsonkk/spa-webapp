@@ -257,11 +257,17 @@ with tab4:
             gap = (ub - obj) / ub * 100 if ub and ub > 0 else 0.0
             obj_disp = int(obj) if float(obj).is_integer() else obj
 
+            def metric(col, label, value):
+                col.markdown(
+                    "<div style='line-height:1.35'>"
+                    f"<div style='font-size:0.8rem;color:#808495'>{label}</div>"
+                    f"<div style='font-size:1.6rem;font-weight:700'>{value}</div>"
+                    "</div>", unsafe_allow_html=True)
             m1, m2, m3, m4 = st.columns(4)
-            m1.metric("OBJ (giá trị mục tiêu)", obj_disp)
-            m2.metric("UB (cận trên)", int(ub) if float(ub).is_integer() else ub)
-            m3.metric("GAP", f"{gap:.2f}%")
-            m4.metric("Thời gian giải", format_duration(res["seconds"]))
+            metric(m1, "OBJ (giá trị mục tiêu)", obj_disp)
+            metric(m2, "UB (cận trên)", int(ub) if float(ub).is_integer() else ub)
+            metric(m3, "GAP", f"{gap:.2f}%")
+            metric(m4, "Thời gian giải", format_duration(res["seconds"]))
 
             # Bảng phân công
             assign = {s: p for (s, p), v in res["solution"].items() if v == 1}
